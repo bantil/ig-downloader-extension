@@ -3,15 +3,19 @@
     "manifest_version": 2,
     "name": "ig-downloader",
     "version": "1.0",
-    "homepage_url": "",
+    "homepage_url": "https://github.com/dynalar",
     "icons": {
-        "48": "icons/border-48.png"
+        "48": "assets/icons/ig-downloader.png"
     },
-
+    "permissions": [
+        "webNavigation",
+        "*://www.instagram.com/*"
+    ],
     "content_scripts": [
         {
-            "matches": ["*://instagram.com/*"],
-            "js": ["main.js"]
+            "matches": ["*://www.instagram.com/*"],
+            "js": ["main.js"],
+            "run_at": "document_idle"
         }
     ]
 }
