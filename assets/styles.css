@@ -1,0 +1,70 @@
+.dl-download-insta-media {
+    -webkit-tap-highlight-color: transparent;
+    align-items: stretch;
+    background-color: transparent;
+    border-top-color: var(--always-dark-overlay);
+    border-right-color: var(--always-dark-overlay);
+    border-bottom-color: var(--always-dark-overlay);
+    border-left-color: var(--always-dark-overlay);
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    flex-basis: auto;
+    flex-shrink: 0;
+    list-style: none;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    min-height: 0;
+    min-width: 0;
+    position: relative;
+    text-align: inherit;
+    text-decoration: none;
+    touch-action: manipulation;
+    outline-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    user-select: none;
+    text-decoration: none;
+    outline: none;
+    opacity: .4;
+    padding-top: 10px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+}
+
+.dl-border-top-left-radius {
+    border-top-left-radius: inherit
+}
+
+.dl-border-top-right-radius {
+    border-top-right-radius: inherit
+}
+
+.dl-border-bottom-right-radius {
+    border-bottom-right-radius: inherit
+}
+
+.dl-border-bottom-left-radius-2 {
+    border-bottom-left-radius: inherit
+}
+
+.dl-rgb-color {
+    color: black;
+}
+
+.dl-positioning {
+    position: relative
+}
+
+.dl-display-block {
+    display: block
+}

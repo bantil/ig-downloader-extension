@@ -15,6 +15,7 @@
         {
             "matches": ["*://www.instagram.com/*"],
             "js": ["main.js"],
+            "css": ["assets/styles.css"],
             "run_at": "document_idle"
         }
     ]
