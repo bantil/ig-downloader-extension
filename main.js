@@ -4,6 +4,8 @@ const buttonGroup = "/html/body/div[2]/div/div/div[2]/div/div/div[1]/div[1]/div[
 
 // instagram keeps the first image in an album in a separate list, and the rest of the images after that are kept in a different list.
 // note the li[2] and li[3] differences
+// TODO replace this shit with query selector instead of having to maintain stupid xpaths
+const singleImage = "/html/body/div[2]/div/div/div[2]/div/div/div[1]/div[1]/div[2]/section/main/div/div[1]/div/div[1]/div/div/div/div/div/div/div[1]/div[2]/div/div/div/ul/li[2]/div/div/div/div/div[1]/img";
 const coverImage = "/html/body/div[2]/div/div/div[2]/div/div/div[1]/div[1]/div[2]/section/main/div/div[1]/div/div[1]/div/div/div/div/div/div/div[1]/div[2]/div/div/div/ul/li[2]/div/div/div/div/div[1]/img"
 const albumImage = "/html/body/div[2]/div/div/div[2]/div/div/div[1]/div[1]/div[2]/section/main/div/div[1]/div/div[1]/div/div/div/div/div/div/div[1]/div[2]/div/div/div/ul/li[3]/div/div/div/div/div[1]/img"
 
@@ -46,7 +48,9 @@ document.getElementById("dl-download-insta-media").addEventListener("click", fun
 
     console.log(imgIndex);
 
-    if(imgIndex !== null || imgIndex == 1) {
+    if(imgIndex == null) {
+        imagePath = singleImage;
+    } else if (imgIndex == 1) {
         imagePath = coverImage;
     } else {
         imagePath = albumImage;
